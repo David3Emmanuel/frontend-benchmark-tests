@@ -1,6 +1,7 @@
 import subprocess
 import time
 import sys
+from datetime import timedelta
 
 start_dummy = time.perf_counter()
 subprocess.run([], shell=True)
@@ -22,5 +23,6 @@ else:
 
 total_time_taken = end - start
 print("Total time taken:", total_time_taken)
-benchmark = total_time_taken - overhead
+benchmark = max(total_time_taken - overhead, 0)
 print("Benchmark:", benchmark)
+print("Formatted:", str(timedelta(seconds=round(benchmark))))
