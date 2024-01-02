@@ -1,0 +1,18 @@
+[submodule "npm-create-vite"]
+	path = npm-create-vite
+	url = ./npm-create-vite
+[submodule "npx-create-next-app"]
+	path = npx-create-next-app
+	url = ./npx-create-next-app
+[submodule "npx-create-react-app"]
+	path = npx-create-react-app
+	url = ./npx-create-react-app
+[submodule "yarn-create-next-app"]
+	path = yarn-create-next-app
+	url = ./yarn-create-next-app
+[submodule "yarn-create-react-app"]
+	path = yarn-create-react-app
+	url = ./yarn-create-react-app
+[submodule "yarn-create-vite"]
+	path = yarn-create-vite
+	url = ./yarn-create-vite
