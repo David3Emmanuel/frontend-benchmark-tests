@@ -1,38 +1,41 @@
-[
-    {
-        "name": "npx-create-react-app",
-        "command": "npx create-react-app <>",
-        "benchmark": 2472.24,
-        "size": 234
-    },
-    {
-        "name": "yarn-create-react-app",
-        "command": "yarn create react-app <>",
-        "benchmark": 1374.67,
-        "size": 146
-    },
-    {
-        "name": "npm-create-vite",
-        "command": "npm create vite@latest <> -- --template react & cd <> & npm install",
-        "benchmark": 321.57,
-        "size": 50.6
-    },
-    {
-        "name": "yarn-create-vite",
-        "command": "yarn create vite <> --template react & cd <> & yarn",
-        "benchmark": 236.43,
-        "size": 50.5
-    },
-    {
-        "name": "npx-create-next-app",
-        "command": "npx create-next-app@latest <> --js --tailwind --eslint --app --src-dir --import-alias \"@/\" --use-npm",
-        "benchmark": 1050.42,
-        "size": 284
-    },
-    {
-        "name": "yarn-create-next-app",
-        "command": "yarn create next-app <> --js --tailwind --eslint --app --src-dir --import-alias \"@/\" --use-yarn",
-        "benchmark": 1182.96,
-        "size": 254
-    }
-]
+{
+    "$schema": "./results.schema.json",
+    "results": [
+        {
+            "name": "npx-create-react-app",
+            "command": "npx create-react-app <>",
+            "benchmark": 2472.24,
+            "size": 234
+        },
+        {
+            "name": "yarn-create-react-app",
+            "command": "yarn create react-app <>",
+            "benchmark": 1374.67,
+            "size": 146
+        },
+        {
+            "name": "npm-create-vite",
+            "command": "npm create vite@latest <> -- --template react & cd <> & npm install",
+            "benchmark": 321.57,
+            "size": 50.6
+        },
+        {
+            "name": "yarn-create-vite",
+            "command": "yarn create vite <> --template react & cd <> & yarn",
+            "benchmark": 236.43,
+            "size": 50.5
+        },
+        {
+            "name": "npx-create-next-app",
+            "command": "npx create-next-app@latest <> --js --tailwind --eslint --app --src-dir --import-alias \"@/\" --use-npm",
+            "benchmark": 1050.42,
+            "size": 284
+        },
+        {
+            "name": "yarn-create-next-app",
+            "command": "yarn create next-app <> --js --tailwind --eslint --app --src-dir --import-alias \"@/\" --use-yarn",
+            "benchmark": 1182.96,
+            "size": 254
+        }
+    ]
+}

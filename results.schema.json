@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "title": "Benchmark results",
+    "description": "Statistics gotten from running various frontend build tools",
+    "type": "object",
+    "properties": {
+        "results": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "title": "A build tool",
+                "required": [
+                    "name",
+                    "command",
+                    "benchmark",
+                    "size"
+                ],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Name of build tool"
+                    },
+                    "command": {
+                        "type": "string",
+                        "title": "The shell command",
+                        "description": "<> can be used as a placeholder project name"
+                    },
+                    "benchmark": {
+                        "type": "number",
+                        "title": "Number of seconds taken",
+                        "description": "Value gotten from running benchmark.py"
+                    },
+                    "size": {
+                        "type": "number",
+                        "title": "Size of project folder in MB"
+                    }
+                }
+            }
+        }
+    }
+}
